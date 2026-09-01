@@ -52,7 +52,7 @@ function Signup() {
     setIsLoggingIn(true);
 
     try {
-      const response = await fetch("http://localhost:3002/login", {
+      const response = await fetch("https://stockmakt.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -78,7 +78,7 @@ function Signup() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:3002/signup", {
+      const response = await fetch("https://stockmakt.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
